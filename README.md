@@ -1,4 +1,4 @@
-# 🧙‍♂️ Merlin: Your AI-First Knowledge Companion
+# Merlin: Your AI-First Knowledge Companion
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Arthurs-excalibur/Merlin)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -8,7 +8,7 @@ Merlin is a high-performance desktop application designed to bridge the gap betw
 
 ![Merlin Dashboard](./src/assets/hero.png)
 
-## ✨ Features
+##  Features
 
 - **🧠 Neural Memory**: Seamless integration with your Obsidian vault.
 - **🎨 Cognitive Tactility**: A premium design system featuring Modern Neumorphism and Glassmorphism.
