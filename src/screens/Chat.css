@@ -1,0 +1,90 @@
+.chat-surface {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.chat-reading-column {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-right: 6px;
+}
+
+.chat-message-block {
+  max-width: 880px;
+  padding: 22px 24px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(82, 97, 107, 0.08);
+}
+
+.chat-message-block.user {
+  align-self: flex-end;
+  background: rgba(82, 97, 107, 0.1);
+}
+
+.chat-message-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.memory-inline-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(82, 97, 107, 0.08);
+  color: #52616b;
+}
+
+.composer {
+  border: 1px solid rgba(82, 97, 107, 0.08);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 48px rgba(82, 97, 107, 0.08);
+}
+
+.composer-floating {
+  padding: 20px;
+}
+
+.composer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.composer-input-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 52px;
+  gap: 14px;
+  align-items: end;
+}
+
+.composer-input-shell textarea {
+  min-height: 108px;
+  resize: none;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(82, 97, 107, 0.08);
+  box-shadow: none;
+  background: rgba(240, 245, 249, 0.72);
+}
+
+.icon-only {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 16px;
+}

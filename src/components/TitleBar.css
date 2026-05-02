@@ -1,0 +1,68 @@
+.titlebar {
+  height: 32px;
+  background: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  padding-left: 16px;
+}
+
+.mac-window-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.drag-region {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-app-region: drag;
+}
+
+.mac-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  -webkit-app-region: no-drag;
+}
+
+.mac-btn svg {
+  opacity: 0.6;
+}
+
+.mac-btn.close {
+  background-color: #FF5F56;
+}
+.mac-btn.close:active {
+  background-color: #BF4C46;
+}
+
+.mac-btn.minimize {
+  background-color: #FFBD2E;
+}
+.mac-btn.minimize:active {
+  background-color: #BF8E22;
+}
+
+.mac-btn.maximize {
+  background-color: #27C93F;
+}
+.mac-btn.maximize:active {
+  background-color: #1D9730;
+}

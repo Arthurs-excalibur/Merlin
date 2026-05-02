@@ -1,0 +1,126 @@
+.memory-surface {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 20px;
+  min-height: 0;
+}
+
+.memory-browser-panel,
+.memory-editor-panel {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.memory-search-shell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(240, 245, 249, 0.75);
+  border: 1px solid rgba(82, 97, 107, 0.08);
+}
+
+.memory-search-shell input {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  background: transparent;
+}
+
+.memory-group-list {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-right: 6px;
+}
+
+.memory-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.memory-group-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(82, 97, 107, 0.78);
+}
+
+.memory-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(82, 97, 107, 0.08);
+}
+
+.memory-group-item.active {
+  background: rgba(82, 97, 107, 0.12);
+}
+
+.memory-group-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.memory-group-item span {
+  font-size: 12px;
+  color: rgba(82, 97, 107, 0.86);
+}
+
+.memory-link-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.memory-editor-grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 18px;
+}
+
+.memory-editor-textarea,
+.memory-preview-pane {
+  min-height: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(82, 97, 107, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.memory-editor-textarea {
+  resize: none;
+  padding: 20px;
+  box-shadow: none;
+}
+
+.memory-preview-pane {
+  overflow: auto;
+  padding: 20px;
+  white-space: pre-wrap;
+  color: rgba(30, 32, 34, 0.76);
+}
+
+.memory-related-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1100px) {
+  .memory-surface,
+  .memory-editor-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,54 @@
+.settings-surface {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.settings-panel-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 22px;
+  border: 1px solid rgba(82, 97, 107, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.settings-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-panel-card p {
+  color: rgba(30, 32, 34, 0.72);
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-field span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-field select {
+  border: 1px solid rgba(82, 97, 107, 0.08);
+  box-shadow: none;
+  background: rgba(240, 245, 249, 0.78);
+}
+
+@media (max-width: 900px) {
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+}
