@@ -6,7 +6,7 @@
 
 Merlin is a high-performance desktop application designed to bridge the gap between your local knowledge base (Obsidian) and advanced AI intelligence. Built with **Cognitive Tactility** at its core, Merlin provides a physical, interactive interface for your digital thoughts.
 
-![Merlin Dashboard](./src/assets/hero.png)
+##  The backend is not yet complete; I’m currently working on it.
 
 ##  Features
 
